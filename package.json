@@ -2,7 +2,7 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "proxyman",
   "title": "Proxyman",
-  "description": "Common Commands for Proxyman, e.g: Toggle System Proxy, Toggle Debugging Tools, ...",
+  "description": "Navigate and perform common actions in Proxyman faster",
   "icon": "proxyman-icon.png",
   "author": "noah_tran",
   "access": "public",
