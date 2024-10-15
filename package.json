@@ -5,8 +5,11 @@
   "description": "Common Commands for Proxyman, e.g: Toggle System Proxy, Toggle Debugging Tools, ...",
   "icon": "proxyman-icon.png",
   "author": "noah_tran",
+  "access": "public",
+  "owner": "Proxyman",
   "categories": [
-    "Developer Tools"
+    "Developer Tools",
+    "Applications"
   ],
   "keywords": [
     "Proxyman",
