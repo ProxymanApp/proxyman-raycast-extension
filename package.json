@@ -26,15 +26,15 @@
       "name": "toggle-system-proxy",
       "title": "Toggle System Proxy",
       "subtitle": "Proxyman",
-      "description": "Quickly Toggle HTTP/HTTPS System Proxy. Same logic with Tools -> Proxy Setting -> Override macOS System",
+      "description": "Toggle HTTP/HTTPS System Proxy. Same logic with Tools -> Proxy Setting -> Override macOS System",
       "mode": "no-view"
     },
     {
       "name": "toggle-map-local-tool",
       "title": "Toggle Map Local Tool",
       "subtitle": "Proxyman",
-      "description": "Quickly Toggle the Map Local Tool in Proxyman",
-      "mode": "view"
+      "description": "Toggle the Map Local Tool in Proxyman",
+      "mode": "no-view"
     }
   ],
   "dependencies": {
