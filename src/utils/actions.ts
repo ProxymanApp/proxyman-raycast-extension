@@ -1,4 +1,5 @@
-import { exec } from "child_process";
+import { open, showToast, Toast } from "@raycast/api";
+import { checkProxymanAppInstallation } from "./utils";
 
 export const ProxymanActions = {
   ToggleSystemProxy: "ToggleSystemProxy",
@@ -8,25 +9,40 @@ export const ProxymanActions = {
   ToggleAllowlist: "ToggleAllowlist",
   ToggleMapRemote: "ToggleMapRemote",
   ToggleScripting: "ToggleScripting",
+  ToggleExternalProxy: "ToggleExternalProxy",
+  ToggleSOCKSProxy: "ToggleSOCKSProxy",
+  ToggleNetworkCondition: "ToggleNetworkCondition",
+  ToggleSSLProxyingList: "ToggleSSLProxyingList",
+  ToggleRecordTraffic: "ToggleRecordTraffic",
   ClearSession: "ClearSession",
 } as const;
 
 export type ProxymanActionType = (typeof ProxymanActions)[keyof typeof ProxymanActions];
 
-export function runSchemaAction(action: ProxymanActionType): Promise<void> {
-  return new Promise((resolve, reject) => {
-    // build URL
-    const uri = `proxyman://action?name=${action}`;
+async function runSchemaAction(action: ProxymanActionType) {
+  const uri = `proxyman://action?name=${action}`;
+  await open(uri);
+}
 
-    // open Proxyman with schema
-    exec(`open "${uri}"`, (error, stdout, stderr) => {
-      if (error) {
-        reject(error);
-      } else if (stderr) {
-        reject(new Error(stderr));
-      } else {
-        resolve();
-      }
+export async function performAction(action: ProxymanActionType, successTitle: string, errorTitle: string) {
+  try {
+    const isInstalled = await checkProxymanAppInstallation();
+    if (!isInstalled) {
+      return;
+    }
+
+    await runSchemaAction(action);
+
+    await showToast({
+      style: Toast.Style.Success,
+      title: successTitle,
     });
-  });
+  } catch (error) {
+    console.error(`Error: ${errorTitle}`, error);
+    await showToast({
+      style: Toast.Style.Failure,
+      title: errorTitle,
+      message: error instanceof Error ? error.message : "An unknown error occurred",
+    });
+  }
 }
