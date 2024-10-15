@@ -1,12 +1,14 @@
-import { exec, execSync } from "child_process";
+import { exec } from "child_process";
 
 export const ProxymanActions = {
   ToggleSystemProxy: "ToggleSystemProxy",
   ToggleMapLocal: "ToggleMapLocal",
   ToggleBreakpoint: "ToggleBreakpoint",
   ToggleBlocklist: "ToggleBlocklist",
-  ToggleToolbar: "ToggleToolbar",
-  ClearCache: "ClearCache",
+  ToggleAllowlist: "ToggleAllowlist",
+  ToggleMapRemote: "ToggleMapRemote",
+  ToggleScripting: "ToggleScripting",
+  ClearSession: "ClearSession",
 } as const;
 
 export type ProxymanActionType = (typeof ProxymanActions)[keyof typeof ProxymanActions];
