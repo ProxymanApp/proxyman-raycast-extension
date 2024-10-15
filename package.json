@@ -38,6 +38,83 @@
       "subtitle": "Proxyman",
       "description": "Toggle the Map Local Tool in Proxyman",
       "mode": "no-view"
+    },
+    {
+      "name": "toggle-breakpoint",
+      "title": "Toggle Breakpoint",
+      "subtitle": "Proxyman",
+      "description": "Toggle the Breakpoint feature in Proxyman",
+      "mode": "no-view"
+    },
+    {
+      "name": "toggle-blocklist",
+      "title": "Toggle Blocklist",
+      "subtitle": "Proxyman",
+      "description": "Toggle the Blocklist feature in Proxyman",
+      "mode": "no-view"
+    },
+    {
+      "name": "toggle-allowlist",
+      "title": "Toggle Allowlist",
+      "subtitle": "Proxyman",
+      "description": "Toggle the Allowlist feature in Proxyman",
+      "mode": "no-view"
+    },
+    {
+      "name": "toggle-map-remote",
+      "title": "Toggle Map Remote",
+      "subtitle": "Proxyman",
+      "description": "Toggle the Map Remote feature in Proxyman",
+      "mode": "no-view"
+    },
+    {
+      "name": "toggle-scripting",
+      "title": "Toggle Scripting",
+      "subtitle": "Proxyman",
+      "description": "Toggle the Scripting feature in Proxyman",
+      "mode": "no-view"
+    },
+    {
+      "name": "toggle-external-proxy",
+      "title": "Toggle External Proxy",
+      "subtitle": "Proxyman",
+      "description": "Toggle the External Proxy feature in Proxyman",
+      "mode": "no-view"
+    },
+    {
+      "name": "toggle-socks-proxy",
+      "title": "Toggle SOCKS Proxy",
+      "subtitle": "Proxyman",
+      "description": "Toggle the SOCKS Proxy feature in Proxyman",
+      "mode": "no-view"
+    },
+    {
+      "name": "toggle-network-condition",
+      "title": "Toggle Network Condition",
+      "subtitle": "Proxyman",
+      "description": "Toggle the Network Condition feature in Proxyman",
+      "mode": "no-view"
+    },
+    {
+      "name": "toggle-ssl-proxying-list",
+      "title": "Toggle SSL Proxying List",
+      "subtitle": "Proxyman",
+      "description": "Toggle the SSL Proxying List feature in Proxyman",
+      "mode": "no-view"
+    },
+    {
+      "name": "toggle-record-traffic",
+      "title": "Toggle Record Traffic",
+      "subtitle": "Proxyman",
+      "description": "Toggle the Record Traffic feature in Proxyman",
+      "mode": "no-view"
+    },
+    {
+      "name": "clear-session",
+      "title": "Clear Session",
+      "subtitle": "Proxyman",
+      "description": "Clear the current session in Proxyman",
+      "mode": "no-view"
     }
   ],
   "dependencies": {
