@@ -34,9 +34,9 @@
     },
     {
       "name": "toggle-map-local-tool",
-      "title": "Toggle Map Local Tool",
+      "title": "Toggle Map Local",
       "subtitle": "Proxyman",
-      "description": "Toggle the Map Local Tool in Proxyman",
+      "description": "Toggle the Map Local in Proxyman",
       "mode": "no-view"
     },
     {

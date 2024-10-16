@@ -16,6 +16,9 @@
 - Toggle Record Traffic
 - Clear Session
 
+# ⚠️ Requirements
+- Required Proxyman macOS 5.10.0 or later
+
 # Installation and Setup
 Before using the Proxyman Extension:
 
