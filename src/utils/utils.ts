@@ -13,7 +13,7 @@ export async function checkProxymanAppInstallation(): Promise<boolean> {
     const options: Toast.Options = {
       style: Toast.Style.Failure,
       title: "Proxyman is not installed.",
-      message: "Download it from https://proxyman.io/",
+      message: "Download it from Proxyman Website",
       primaryAction: {
         title: "Go to https://proxyman.io/",
         onAction: (toast) => {
